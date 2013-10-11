@@ -264,7 +264,7 @@
 						} 
 						catch (err) 
 						{
-							$("div#xmlTable1 div#results").append('<ul align="center"><li >Unable to fetch records now.</li></ul>');
+							$("div#xmlTable1 div#results").append('<ul align="center"><li >Unable to fetch records now1.</li></ul>');
 							$('#HomeView').show();
 							$('#LoginScreen').hide();
 							$('#uname').val('');
