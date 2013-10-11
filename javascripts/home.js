@@ -17,7 +17,7 @@
 		}
 		return eString;
 	}
-	
+	alert("Hi this is app");
 	function showLoading() 
 	{
 		//console.log("inside show loading");
