@@ -137,6 +137,7 @@
 				
 				var xmlInput = xmlInput + "&UserName=" + SiebelUser + "&Password=" + SiebelPassword;
 				console.log("Request XML:..."+xmlInput);
+				alert("Request XML:..."+xmlInput);
 				
 			osapi.jive.connects.get({
 			  'alias' : 'accenture',
