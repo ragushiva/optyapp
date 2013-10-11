@@ -114,7 +114,7 @@
 	
 	function loadTheRecords() 
 	{
-		//console.log("In Loadtherecords");
+		console.log("In Loadtherecords");
 		var xmlDoc = '';
 		
 		if (INITIALIZED == 0)
