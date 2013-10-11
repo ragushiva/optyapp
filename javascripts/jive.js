@@ -198,7 +198,7 @@ $(document).ready(function () {
 	
 	function loadTheRecords() 
 	{
-		//console.log("In Loadtherecords");
+		console.log("In Loadtherecords");
 		var xmlDoc = '';	
 		//Initialize Buddy List
 		if (INITIALIZED == 0)
@@ -214,7 +214,7 @@ $(document).ready(function () {
 			var xmlInput ='<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cus="http://siebel.com/CustomUI" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"><soapenv:Header/><soapenv:Body>    <cus:FINSANIRequestProvidersQueryByExample soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><SiebelMessage xsi:type="opp:ListOfOpportunityInterfaceTopElmt" xmlns:opp="http://www.siebel.com/xml/Opportunity Interface"><ListOfOpportunityInterface xsi:type="opp:ListOfOpportunityInterface"><Opportunity xsi:type="opp:ArrayOfOpportunity" soapenc:arrayType="opp:Opportunity[]"/><Opportunity><Name>*</Name><Account/><Comments/><CurrencyCode/><Description/><PriorityFlag/><PrimaryRevenueAmount/><PrimaryRevenueCloseDate/><PrimaryRevenueWinProbability/><ProductName/><SalesStage>Data Entry</SalesStage><Id/><OpptyId/><RowId/></Opportunity></ListOfOpportunityInterface></SiebelMessage></cus:FINSANIRequestProvidersQueryByExample></soapenv:Body></soapenv:Envelope>';
 			
 			var xmlInput = xmlInput + "&UserName=" + SiebelUser + "&Password=" + SiebelPassword;
-			//console.log("Request XML:..."+xmlInput);
+			console.log("Request XML:..."+xmlInput);
 			
 			osapi.jive.connects.get({
 			  'alias' : 'accenture',
