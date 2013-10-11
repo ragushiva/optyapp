@@ -294,7 +294,7 @@
 			}
 			else
 			{
-				$("div#xmlTable1 div#results").append('<ul align="center"><li colspan="9">Unable to fetch records now. Error:'+response.error.message+'</li></ul>');
+				$("div#xmlTable1 div#results").append('<ul align="center"><li colspan="9">Unable to fetch records now3. Error:'+response.error.message+'</li></ul>');
 				$('#HomeView').show();
 				$('#LoginScreen').hide();			
 				$('#uname').val('');
